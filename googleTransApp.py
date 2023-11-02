@@ -17,7 +17,8 @@ class MyGoogleTrans(QMainWindow, form_class):
         self.setWindowIcon(QIcon('icon/google.png')) # 번역기 앱의 아이콘
         self.statusBar().showMessage('Google Trans App v1.0 Copyright ⓒ GyojinCompany') # 상태 표시줄
 
-        self.btn_trans.clicked.connect(self.trans_function) #signal
+        self.btn_trans.clicked.connect(self.trans_function) # signal
+        self.reset_btn.clicked.connect(self.reset_kor)  # signal
 
 
     def trans_function(self): #slot
